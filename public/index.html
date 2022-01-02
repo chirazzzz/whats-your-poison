@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What's Your Poison?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- https://www.thecocktaildb.com/api.php -->
+  </head>
+
+  <body>
+    <nav class="bg-primary">
+      <div class="nav-container flex container">
+        <img
+          class="site-logo"
+          src="images/What's your poison Logo.png"
+          alt="logo with four cocktail outlines"
+        />
+        <h2 class="text-dark ff-heading fs-heading-title">
+          Choose Your Poison!
+        </h2>
+      </div>
+    </nav>
+
+    <section class="cocktails-section flex">
+      <div class="cocktail-search flex">
+        <h1 class="text-primary ff-heading fs-heading-main">Cocktail Search</h1>
+        <input
+          type="text"
+          aria-label="cocktail-input"
+          id="cocktail-input"
+          class="cocktail-input"
+        />
+        <div class="radio-buttons flex">
+          <div>
+            <input
+              type="radio"
+              name="cocktail-option"
+              id="alcoholic"
+              class="radio-btn"
+            />
+            <label for="alcoholic" class="text-light fw-bold">Alcoholic</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              name="cocktail-option"
+              id="non-alcoholic"
+              class="radio-btn"
+            />
+            <label for="non-alcoholic" class="text-light fw-bold"
+              >Non-Alcoholic</label
+            >
+          </div>
+        </div>
+      </div>
+      <ul id="cocktails-list" class="cocktails-list"></ul>
+    </section>
+  </body>
+</html>
